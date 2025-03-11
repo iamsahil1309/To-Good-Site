@@ -274,11 +274,16 @@ footer .info a {
 }
 
 @media (max-width:600px){
+
+    #nav-part1 {
+            width: 150px;
+    }
+
     #page1 {
         min-height: 70vh;
         width: 100%;
         padding: 0 3vw;
-        margin-top: 25vw;
+        margin-top: 35vw;
     }
     #page1 h1 {
         font-size: 15.5vw;
