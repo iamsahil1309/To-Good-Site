@@ -1,0 +1,374 @@
+@font-face {
+  font-family: gilroy;
+  src: url(./asset/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: futura;
+  src: url(./asset/Futura-Bold.ttf);
+}
+
+*::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+#cursor {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(219, 199, 199);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav-part1 {
+    height: 83px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav #nav-part2 #links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#links, #icons {
+    padding: 10px;
+}
+
+#icons {
+    background-color: #F7F7F7;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#nav #nav-part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav #nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0 1vw;
+  padding-top: 19vh;
+}
+
+#page1 h1 {
+  font-family: futura;
+  font-size: 15.8vw;
+  line-height: 14vw;
+  letter-spacing: -8px;
+  text-transform: uppercase;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container #play {
+    padding: 3vw 2vw;
+    background-color: #000;
+    color: #fff;
+    font-family: futura;
+    position: fixed;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    z-index: 100;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.pledge {
+    height: 60vh;
+    font-size: 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 2px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line .break {
+    height: 1px;
+    width: 95vw;
+    background-color: #000;
+}
+
+#page2 {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+.elem .dets {
+    height: 50px;
+    width: 70%;
+    position: absolute;
+    background-color: rgb(216, 157, 177);
+    border-radius: 50px;
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 55vh;
+    width: 40vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img {
+    height: 100%;
+}
+
+#page4 {
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+
+#page4 h1 {
+    font-size: 16px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+#page4 #socials .social-link , #page4 #faq .faq-link{
+    margin-top: 4px;
+}
+
+#page4 #socials .social-link li {
+    text-align: left;
+    list-style-type: none;
+    margin-top: 2px;
+}
+
+#page4 #faq .faq-link li {
+    list-style-type: none;
+    text-align: right;
+    margin-top: 2px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .policy {
+    display: flex;
+    gap: 30px;
+    color: gray;
+}
+
+footer .info {
+    padding: 0 10vw;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+footer .info a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width:600px){
+    #page1 {
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        margin-top: 25vw;
+    }
+    #page1 h1 {
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+    }
+    #video-container {
+        height: 25vh;
+        margin-top: 3vw;
+    }
+
+    #video-container #play {
+        padding: 9.5vw 7.2vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    }
+
+    #page2 {
+        flex-direction: column;
+        padding: 5vw 3vw;
+        justify-content: space-between;
+    }
+
+    #page2 .elem {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+    .elem .dets {
+    height: 40px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(229, 156, 186);
+}
+    .pledge {
+        height: 30vh;
+        font-size: 7vw;
+        letter-spacing: 0;
+    }
+
+     #page3 {
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .child {
+        height: 54vh;
+        width: 88vw;
+        /* background-color: red; */
+        /* border: 2px solid #000; */
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child img {
+        height: 100%;
+    }
+
+    #page4 {
+        flex-direction: column;
+        margin-bottom: 5vw;
+    }
+    #page4 #socials .social-link li , #page4 #faq .faq-link li{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 2px;
+}
+
+footer .policy {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    text-align: center;
+    color: gray;
+    padding: 5vw;
+}
+
+}
