@@ -135,10 +135,10 @@ function cursorAnimation() {
 }
 cursorAnimation();
 
-// gsap.from(".para", {
-//   opacity: 0,
-//   delay: 3.5,
-//   duration: 1,
-//   y: 100,
-//   stagger: 0.5,
-// });
+gsap.from(".para", {
+  opacity: 0,
+  delay: 3.5,
+  duration: 1,
+  y: 100,
+  stagger: 0.5,
+});
